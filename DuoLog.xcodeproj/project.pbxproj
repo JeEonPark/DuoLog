@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A20B0AB2BCC3202002ACEFA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A20B0AA2BCC3202002ACEFA /* LoginView.swift */; };
+		2A2419132BCF73BA007CE025 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2419122BCF73BA007CE025 /* LoginViewModel.swift */; };
+		2A357D6F2BD1122D005FD290 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2A357D6E2BD1122D005FD290 /* FirebaseFirestoreSwift */; };
+		2A44B3C12BDA2D4800D8901B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 2A44B3C02BDA2D4800D8901B /* .gitignore */; };
+		2A8BB4A42BC9146D000DF7B6 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8BB4A32BC9146D000DF7B6 /* SplashView.swift */; };
+		2A8BB4A62BC91CD0000DF7B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A8BB4A52BC91CD0000DF7B6 /* GoogleService-Info.plist */; };
+		2A8BB4A92BC91DCE000DF7B6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2A8BB4A82BC91DCE000DF7B6 /* FirebaseAuth */; };
+		2A8BB4AB2BC91DCE000DF7B6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 2A8BB4AA2BC91DCE000DF7B6 /* FirebaseFirestore */; };
+		2A8BB4AD2BC91DCE000DF7B6 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 2A8BB4AC2BC91DCE000DF7B6 /* FirebaseStorage */; };
+		2ABDA94B2BCD022700156A3C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABDA94A2BCD022700156A3C /* MainView.swift */; };
+		2ABDA9512BCD0A1B00156A3C /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABDA9502BCD0A1B00156A3C /* Color+Extension.swift */; };
+		2ABDA9532BCD0DAD00156A3C /* LogBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABDA9522BCD0DAD00156A3C /* LogBubble.swift */; };
+		2ABDA9562BCD130C00156A3C /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABDA9552BCD130C00156A3C /* FirebaseManager.swift */; };
+		2ABDA9582BCD40E900156A3C /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABDA9572BCD40E900156A3C /* AuthManager.swift */; };
+		2ABDA95A2BCD420600156A3C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABDA9592BCD420600156A3C /* UserModel.swift */; };
+		2ABDA95C2BCD4B7500156A3C /* ViewStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABDA95B2BCD4B7500156A3C /* ViewStateManager.swift */; };
+		2ABDA99A2BCE68D400156A3C /* UserFirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABDA9992BCE68D400156A3C /* UserFirebaseManager.swift */; };
+		2ABDA9A82BCE8B6200156A3C /* PretendardJP-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2ABDA99F2BCE8B6100156A3C /* PretendardJP-Medium.otf */; };
+		2ABDA9A92BCE8B6200156A3C /* PretendardJP-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2ABDA9A02BCE8B6100156A3C /* PretendardJP-ExtraBold.otf */; };
+		2ABDA9AA2BCE8B6200156A3C /* PretendardJP-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2ABDA9A12BCE8B6100156A3C /* PretendardJP-ExtraLight.otf */; };
+		2ABDA9AB2BCE8B6200156A3C /* PretendardJP-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2ABDA9A22BCE8B6200156A3C /* PretendardJP-Bold.otf */; };
+		2ABDA9AC2BCE8B6200156A3C /* PretendardJP-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2ABDA9A32BCE8B6200156A3C /* PretendardJP-Regular.otf */; };
+		2ABDA9AD2BCE8B6200156A3C /* PretendardJP-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2ABDA9A42BCE8B6200156A3C /* PretendardJP-SemiBold.otf */; };
+		2ABDA9AE2BCE8B6200156A3C /* PretendardJP-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2ABDA9A52BCE8B6200156A3C /* PretendardJP-Thin.otf */; };
+		2ABDA9AF2BCE8B6200156A3C /* PretendardJP-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2ABDA9A62BCE8B6200156A3C /* PretendardJP-Light.otf */; };
+		2ABDA9B02BCE8B6200156A3C /* PretendardJP-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2ABDA9A72BCE8B6200156A3C /* PretendardJP-Black.otf */; };
+		2ABDB4222BCF9B9900552317 /* BubbleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABDB4212BCF9B9900552317 /* BubbleComponent.swift */; };
+		2ABDB4242BCFBCEE00552317 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABDB4232BCFBCEE00552317 /* MainViewModel.swift */; };
+		2AE69D462BC7CE4F009B55F9 /* DuoLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE69D452BC7CE4F009B55F9 /* DuoLogApp.swift */; };
+		2AE69D482BC7CE4F009B55F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE69D472BC7CE4F009B55F9 /* ContentView.swift */; };
+		2AE69D4A2BC7CE4F009B55F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AE69D492BC7CE4F009B55F9 /* Assets.xcassets */; };
+		2AE69D4D2BC7CE4F009B55F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AE69D4C2BC7CE4F009B55F9 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2AE69D532BC7CE4F009B55F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AE69D3A2BC7CE4E009B55F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AE69D412BC7CE4F009B55F9;
+			remoteInfo = DuoLog;
+		};
+		2AE69D5D2BC7CE4F009B55F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AE69D3A2BC7CE4E009B55F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AE69D412BC7CE4F009B55F9;
+			remoteInfo = DuoLog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A20B0AA2BCC3202002ACEFA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2A20B0AC2BCC38AB002ACEFA /* DuoLog.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DuoLog.entitlements; sourceTree = "<group>"; };
+		2A2419122BCF73BA007CE025 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		2A44B3C02BDA2D4800D8901B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		2A8BB4A32BC9146D000DF7B6 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		2A8BB4A52BC91CD0000DF7B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2ABDA94A2BCD022700156A3C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2ABDA9502BCD0A1B00156A3C /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		2ABDA9522BCD0DAD00156A3C /* LogBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogBubble.swift; sourceTree = "<group>"; };
+		2ABDA9552BCD130C00156A3C /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		2ABDA9572BCD40E900156A3C /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		2ABDA9592BCD420600156A3C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		2ABDA95B2BCD4B7500156A3C /* ViewStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStateManager.swift; sourceTree = "<group>"; };
+		2ABDA9992BCE68D400156A3C /* UserFirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFirebaseManager.swift; sourceTree = "<group>"; };
+		2ABDA99F2BCE8B6100156A3C /* PretendardJP-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PretendardJP-Medium.otf"; sourceTree = "<group>"; };
+		2ABDA9A02BCE8B6100156A3C /* PretendardJP-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PretendardJP-ExtraBold.otf"; sourceTree = "<group>"; };
+		2ABDA9A12BCE8B6100156A3C /* PretendardJP-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PretendardJP-ExtraLight.otf"; sourceTree = "<group>"; };
+		2ABDA9A22BCE8B6200156A3C /* PretendardJP-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PretendardJP-Bold.otf"; sourceTree = "<group>"; };
+		2ABDA9A32BCE8B6200156A3C /* PretendardJP-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PretendardJP-Regular.otf"; sourceTree = "<group>"; };
+		2ABDA9A42BCE8B6200156A3C /* PretendardJP-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PretendardJP-SemiBold.otf"; sourceTree = "<group>"; };
+		2ABDA9A52BCE8B6200156A3C /* PretendardJP-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PretendardJP-Thin.otf"; sourceTree = "<group>"; };
+		2ABDA9A62BCE8B6200156A3C /* PretendardJP-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PretendardJP-Light.otf"; sourceTree = "<group>"; };
+		2ABDA9A72BCE8B6200156A3C /* PretendardJP-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PretendardJP-Black.otf"; sourceTree = "<group>"; };
+		2ABDA9B12BCE8C1300156A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2ABDB4212BCF9B9900552317 /* BubbleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleComponent.swift; sourceTree = "<group>"; };
+		2ABDB4232BCFBCEE00552317 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		2AE69D422BC7CE4F009B55F9 /* DuoLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuoLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AE69D452BC7CE4F009B55F9 /* DuoLogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuoLogApp.swift; sourceTree = "<group>"; };
+		2AE69D472BC7CE4F009B55F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2AE69D492BC7CE4F009B55F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2AE69D4C2BC7CE4F009B55F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2AE69D522BC7CE4F009B55F9 /* DuoLogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DuoLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AE69D5C2BC7CE4F009B55F9 /* DuoLogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DuoLogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AE69D3F2BC7CE4F009B55F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A8BB4A92BC91DCE000DF7B6 /* FirebaseAuth in Frameworks */,
+				2A8BB4AB2BC91DCE000DF7B6 /* FirebaseFirestore in Frameworks */,
+				2A8BB4AD2BC91DCE000DF7B6 /* FirebaseStorage in Frameworks */,
+				2A357D6F2BD1122D005FD290 /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE69D4F2BC7CE4F009B55F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE69D592BC7CE4F009B55F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A2419102BCF72C8007CE025 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2A2419122BCF73BA007CE025 /* LoginViewModel.swift */,
+				2ABDB4232BCFBCEE00552317 /* MainViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2A8BB4A22BC91281000DF7B6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2A20B0AA2BCC3202002ACEFA /* LoginView.swift */,
+				2A8BB4A32BC9146D000DF7B6 /* SplashView.swift */,
+				2ABDA94A2BCD022700156A3C /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2ABDA9492BCCFC4200156A3C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2ABDA9522BCD0DAD00156A3C /* LogBubble.swift */,
+				2ABDA9592BCD420600156A3C /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2ABDA94C2BCD06A300156A3C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2ABDB4212BCF9B9900552317 /* BubbleComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2ABDA94D2BCD0A0600156A3C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2ABDA9502BCD0A1B00156A3C /* Color+Extension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2ABDA9542BCD12F900156A3C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2ABDA9952BCE651B00156A3C /* Firebase */,
+				2ABDA9552BCD130C00156A3C /* FirebaseManager.swift */,
+				2ABDA9572BCD40E900156A3C /* AuthManager.swift */,
+				2ABDA95B2BCD4B7500156A3C /* ViewStateManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		2ABDA9952BCE651B00156A3C /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				2ABDA9992BCE68D400156A3C /* UserFirebaseManager.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		2ABDA99D2BCE8B3800156A3C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2ABDA99E2BCE8B4300156A3C /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2ABDA99E2BCE8B4300156A3C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2ABDA9A72BCE8B6200156A3C /* PretendardJP-Black.otf */,
+				2ABDA9A22BCE8B6200156A3C /* PretendardJP-Bold.otf */,
+				2ABDA9A02BCE8B6100156A3C /* PretendardJP-ExtraBold.otf */,
+				2ABDA9A12BCE8B6100156A3C /* PretendardJP-ExtraLight.otf */,
+				2ABDA9A62BCE8B6200156A3C /* PretendardJP-Light.otf */,
+				2ABDA99F2BCE8B6100156A3C /* PretendardJP-Medium.otf */,
+				2ABDA9A32BCE8B6200156A3C /* PretendardJP-Regular.otf */,
+				2ABDA9A42BCE8B6200156A3C /* PretendardJP-SemiBold.otf */,
+				2ABDA9A52BCE8B6200156A3C /* PretendardJP-Thin.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		2AE69D392BC7CE4E009B55F9 = {
+			isa = PBXGroup;
+			children = (
+				2A44B3C02BDA2D4800D8901B /* .gitignore */,
+				2AE69D442BC7CE4F009B55F9 /* DuoLog */,
+				2AE69D432BC7CE4F009B55F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2AE69D432BC7CE4F009B55F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AE69D422BC7CE4F009B55F9 /* DuoLog.app */,
+				2AE69D522BC7CE4F009B55F9 /* DuoLogTests.xctest */,
+				2AE69D5C2BC7CE4F009B55F9 /* DuoLogUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AE69D442BC7CE4F009B55F9 /* DuoLog */ = {
+			isa = PBXGroup;
+			children = (
+				2ABDA9B12BCE8C1300156A3C /* Info.plist */,
+				2ABDA99D2BCE8B3800156A3C /* Resources */,
+				2ABDA9542BCD12F900156A3C /* Managers */,
+				2A20B0AC2BCC38AB002ACEFA /* DuoLog.entitlements */,
+				2ABDA94D2BCD0A0600156A3C /* Utils */,
+				2ABDA94C2BCD06A300156A3C /* Components */,
+				2ABDA9492BCCFC4200156A3C /* Models */,
+				2A2419102BCF72C8007CE025 /* ViewModels */,
+				2A8BB4A22BC91281000DF7B6 /* Views */,
+				2AE69D452BC7CE4F009B55F9 /* DuoLogApp.swift */,
+				2AE69D472BC7CE4F009B55F9 /* ContentView.swift */,
+				2AE69D492BC7CE4F009B55F9 /* Assets.xcassets */,
+				2A8BB4A52BC91CD0000DF7B6 /* GoogleService-Info.plist */,
+				2AE69D4B2BC7CE4F009B55F9 /* Preview Content */,
+			);
+			path = DuoLog;
+			sourceTree = "<group>";
+		};
+		2AE69D4B2BC7CE4F009B55F9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2AE69D4C2BC7CE4F009B55F9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2AE69D412BC7CE4F009B55F9 /* DuoLog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AE69D662BC7CE4F009B55F9 /* Build configuration list for PBXNativeTarget "DuoLog" */;
+			buildPhases = (
+				2AE69D3E2BC7CE4F009B55F9 /* Sources */,
+				2AE69D3F2BC7CE4F009B55F9 /* Frameworks */,
+				2AE69D402BC7CE4F009B55F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DuoLog;
+			packageProductDependencies = (
+				2A8BB4A82BC91DCE000DF7B6 /* FirebaseAuth */,
+				2A8BB4AA2BC91DCE000DF7B6 /* FirebaseFirestore */,
+				2A8BB4AC2BC91DCE000DF7B6 /* FirebaseStorage */,
+				2A357D6E2BD1122D005FD290 /* FirebaseFirestoreSwift */,
+			);
+			productName = DuoLog;
+			productReference = 2AE69D422BC7CE4F009B55F9 /* DuoLog.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2AE69D512BC7CE4F009B55F9 /* DuoLogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AE69D692BC7CE4F009B55F9 /* Build configuration list for PBXNativeTarget "DuoLogTests" */;
+			buildPhases = (
+				2AE69D4E2BC7CE4F009B55F9 /* Sources */,
+				2AE69D4F2BC7CE4F009B55F9 /* Frameworks */,
+				2AE69D502BC7CE4F009B55F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AE69D542BC7CE4F009B55F9 /* PBXTargetDependency */,
+			);
+			name = DuoLogTests;
+			productName = DuoLogTests;
+			productReference = 2AE69D522BC7CE4F009B55F9 /* DuoLogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2AE69D5B2BC7CE4F009B55F9 /* DuoLogUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AE69D6C2BC7CE4F009B55F9 /* Build configuration list for PBXNativeTarget "DuoLogUITests" */;
+			buildPhases = (
+				2AE69D582BC7CE4F009B55F9 /* Sources */,
+				2AE69D592BC7CE4F009B55F9 /* Frameworks */,
+				2AE69D5A2BC7CE4F009B55F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AE69D5E2BC7CE4F009B55F9 /* PBXTargetDependency */,
+			);
+			name = DuoLogUITests;
+			productName = DuoLogUITests;
+			productReference = 2AE69D5C2BC7CE4F009B55F9 /* DuoLogUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2AE69D3A2BC7CE4E009B55F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					2AE69D412BC7CE4F009B55F9 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					2AE69D512BC7CE4F009B55F9 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 2AE69D412BC7CE4F009B55F9;
+					};
+					2AE69D5B2BC7CE4F009B55F9 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 2AE69D412BC7CE4F009B55F9;
+					};
+				};
+			};
+			buildConfigurationList = 2AE69D3D2BC7CE4E009B55F9 /* Build configuration list for PBXProject "DuoLog" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2AE69D392BC7CE4E009B55F9;
+			packageReferences = (
+				2A8BB4A72BC91DCE000DF7B6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 2AE69D432BC7CE4F009B55F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2AE69D412BC7CE4F009B55F9 /* DuoLog */,
+				2AE69D512BC7CE4F009B55F9 /* DuoLogTests */,
+				2AE69D5B2BC7CE4F009B55F9 /* DuoLogUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2AE69D402BC7CE4F009B55F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AE69D4D2BC7CE4F009B55F9 /* Preview Assets.xcassets in Resources */,
+				2ABDA9AC2BCE8B6200156A3C /* PretendardJP-Regular.otf in Resources */,
+				2ABDA9A92BCE8B6200156A3C /* PretendardJP-ExtraBold.otf in Resources */,
+				2ABDA9AD2BCE8B6200156A3C /* PretendardJP-SemiBold.otf in Resources */,
+				2ABDA9AF2BCE8B6200156A3C /* PretendardJP-Light.otf in Resources */,
+				2ABDA9AA2BCE8B6200156A3C /* PretendardJP-ExtraLight.otf in Resources */,
+				2ABDA9AE2BCE8B6200156A3C /* PretendardJP-Thin.otf in Resources */,
+				2AE69D4A2BC7CE4F009B55F9 /* Assets.xcassets in Resources */,
+				2ABDA9AB2BCE8B6200156A3C /* PretendardJP-Bold.otf in Resources */,
+				2A8BB4A62BC91CD0000DF7B6 /* GoogleService-Info.plist in Resources */,
+				2ABDA9B02BCE8B6200156A3C /* PretendardJP-Black.otf in Resources */,
+				2A44B3C12BDA2D4800D8901B /* .gitignore in Resources */,
+				2ABDA9A82BCE8B6200156A3C /* PretendardJP-Medium.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE69D502BC7CE4F009B55F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE69D5A2BC7CE4F009B55F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2AE69D3E2BC7CE4F009B55F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AE69D482BC7CE4F009B55F9 /* ContentView.swift in Sources */,
+				2ABDA9582BCD40E900156A3C /* AuthManager.swift in Sources */,
+				2ABDA9512BCD0A1B00156A3C /* Color+Extension.swift in Sources */,
+				2AE69D462BC7CE4F009B55F9 /* DuoLogApp.swift in Sources */,
+				2A20B0AB2BCC3202002ACEFA /* LoginView.swift in Sources */,
+				2ABDB4242BCFBCEE00552317 /* MainViewModel.swift in Sources */,
+				2ABDA95C2BCD4B7500156A3C /* ViewStateManager.swift in Sources */,
+				2ABDA99A2BCE68D400156A3C /* UserFirebaseManager.swift in Sources */,
+				2ABDA9562BCD130C00156A3C /* FirebaseManager.swift in Sources */,
+				2A2419132BCF73BA007CE025 /* LoginViewModel.swift in Sources */,
+				2ABDB4222BCF9B9900552317 /* BubbleComponent.swift in Sources */,
+				2ABDA9532BCD0DAD00156A3C /* LogBubble.swift in Sources */,
+				2ABDA94B2BCD022700156A3C /* MainView.swift in Sources */,
+				2ABDA95A2BCD420600156A3C /* UserModel.swift in Sources */,
+				2A8BB4A42BC9146D000DF7B6 /* SplashView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE69D4E2BC7CE4F009B55F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE69D582BC7CE4F009B55F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2AE69D542BC7CE4F009B55F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AE69D412BC7CE4F009B55F9 /* DuoLog */;
+			targetProxy = 2AE69D532BC7CE4F009B55F9 /* PBXContainerItemProxy */;
+		};
+		2AE69D5E2BC7CE4F009B55F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AE69D412BC7CE4F009B55F9 /* DuoLog */;
+			targetProxy = 2AE69D5D2BC7CE4F009B55F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2AE69D642BC7CE4F009B55F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2AE69D652BC7CE4F009B55F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2AE69D672BC7CE4F009B55F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DuoLog/DuoLog.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DuoLog/Preview Content\"";
+				DEVELOPMENT_TEAM = X3V79774F4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DuoLog/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.devjonny.DuoLog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2AE69D682BC7CE4F009B55F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DuoLog/DuoLog.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DuoLog/Preview Content\"";
+				DEVELOPMENT_TEAM = X3V79774F4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DuoLog/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.devjonny.DuoLog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2AE69D6A2BC7CE4F009B55F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X3V79774F4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.devjonny.DuoLogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DuoLog.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DuoLog";
+			};
+			name = Debug;
+		};
+		2AE69D6B2BC7CE4F009B55F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X3V79774F4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.devjonny.DuoLogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DuoLog.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DuoLog";
+			};
+			name = Release;
+		};
+		2AE69D6D2BC7CE4F009B55F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X3V79774F4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.devjonny.DuoLogUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DuoLog;
+			};
+			name = Debug;
+		};
+		2AE69D6E2BC7CE4F009B55F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X3V79774F4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.devjonny.DuoLogUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DuoLog;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AE69D3D2BC7CE4E009B55F9 /* Build configuration list for PBXProject "DuoLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AE69D642BC7CE4F009B55F9 /* Debug */,
+				2AE69D652BC7CE4F009B55F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AE69D662BC7CE4F009B55F9 /* Build configuration list for PBXNativeTarget "DuoLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AE69D672BC7CE4F009B55F9 /* Debug */,
+				2AE69D682BC7CE4F009B55F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AE69D692BC7CE4F009B55F9 /* Build configuration list for PBXNativeTarget "DuoLogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AE69D6A2BC7CE4F009B55F9 /* Debug */,
+				2AE69D6B2BC7CE4F009B55F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AE69D6C2BC7CE4F009B55F9 /* Build configuration list for PBXNativeTarget "DuoLogUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AE69D6D2BC7CE4F009B55F9 /* Debug */,
+				2AE69D6E2BC7CE4F009B55F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2A8BB4A72BC91DCE000DF7B6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.24.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2A357D6E2BD1122D005FD290 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A8BB4A72BC91DCE000DF7B6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		2A8BB4A82BC91DCE000DF7B6 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A8BB4A72BC91DCE000DF7B6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		2A8BB4AA2BC91DCE000DF7B6 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A8BB4A72BC91DCE000DF7B6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		2A8BB4AC2BC91DCE000DF7B6 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A8BB4A72BC91DCE000DF7B6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2AE69D3A2BC7CE4E009B55F9 /* Project object */;
+}
